@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoritmoPiedraPapelTijera</title>
+    <script>
+        //1 es piedra, 2 es papel, 3 es tijera 
+        let jugador=0; //variable de nombre jugador valor de 0
+        let pc=3;// variable de nombre pc valor de 2
+        jugador=prompt("Elige: 1 para piedra, 2 para papel , 3 para tijera")// variable jugador = a caja Prompt
+        //alert("Elegiste "+ jugador);//funcion de retornar el siguiente texto mas la variable jugador con el dato imput
+        //agregamos una condicional para que ejecute el cosdigo segun el dato imput
+        //signo = asigna un valor doble == compara el valor
+        //condicional si if 
+        //condicional si no else if 
+        //hicimos 3 condicionles distitas 
+        if(jugador==1){
+            alert("Elegiste 🪨")
+        }
+        else if(jugador==2){
+            alert("Elegiste 📜")
+        }
+        else if(jugador==3){
+            alert("Elegiste ✂️")
+        }else{
+            alert("Elegiste Game over")
+        }
+        if(pc==1){
+            alert("PC elegiste 🪨")
+        }
+        else if(pc==2){
+            alert("PC elegiste 📜")
+        }
+        else if(pc==3){
+            alert("PC elegiste ✂️")
+        }
+        //COMBATE 
+        if(pc==jugador){
+            alert("EMPATE")
+        }else if(jugador==1&&pc==3){
+            alert("GANASTE")
+        }else if(jugador==2&&pc==1){
+           alert("GANASTE") 
+        }else if(jugador==3&&pc==1){
+           alert("GANASTE")
+        }else {
+            alert("PERDISTE")
+        };
+        
+    </script>
+</head>
+<body>
+        <h1>Pedra, papel o tijera</h1>
+        <p><strong>PROGRAMAR</strong> es aprendder a manejar la frudtrscion y no rendirte</p>
+</body>
+</html>
