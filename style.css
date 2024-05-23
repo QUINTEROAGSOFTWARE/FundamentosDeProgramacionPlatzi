@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Fredoka one', cursive;
+    background-color: #800080;
+
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    color: white;
+    font-size: 32px;  
+}
+
+
+.subtitulo{
+    color: white;
+    font-size: 20px;
+}
+.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+
+.targeta-de-mokepon{
+    width: 200px;
+    height: 100px;
+    background: #800050;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+.targeta-de-mokepon img{
+    width: 80px;
+}
+#boton-mascota{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: black;
+    font-family: 'poppins',sans-serif;
+    margin:30px 0px 0px 0px;
+}
+input{
+ display: none;
+}
+
+#seleccionar-ataque{
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque{
+    background-color: #800040;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+}
+#boton-reiniciar{
+ background-color: brown;
+ margin-top: 28px;
+}

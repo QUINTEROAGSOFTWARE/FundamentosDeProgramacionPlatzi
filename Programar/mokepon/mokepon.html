@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOKEPON</title>
     <script src="./js/mokepon.js"></script>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <!--Maquetando como los pro-->
     <!--titulo principal esta etiqueta solo se usa una sola ves por documento html-->
-    <h1>MOKEPON! 🔥💧🌳</h1>
     <!--caja para selecionar mascota-->
-    <section id="seleciona-mascota">
-        <h2>Elige a tu mascota</h2><!-- la etiquetas de subtitulos sigientes si se pueden agregar mas de 2 cantidades dentro de los documentos-->
-            <!--💥INPUT:
+    <section id="seleccionar-mascota">
+        <h1 class="titulo">MOKEPON!</h1>
+        <h2 class="subtitulo">Elige a tu mascota</h2><!-- la etiquetas de subtitulos sigientes si se pueden agregar mas de 2 cantidades dentro de los documentos-->
+        <!--💥INPUT:
             Se usa para crear co    ntroles interactivos para formularios basados en la web con el fin de recibir datos del usuario.-->
             <!-- 💥TYPE:
             El tipo de control a mostrar. Su valor predeterminado es text, si no se especifica este atributo.
@@ -27,40 +28,79 @@
                     <!-- 💥ID:
                         El atributo ID especifica un único ID para el elemento HTML (el valor debe ser único, o sea, no repetirse dentro del documento HTML). -->
                         <!--Al agregar el id de la extructura input a nuestro for cuando nuestro cliente precione click sobre el texto va a seleccionar el input -->
-                        <label for="hipodoge">Hipodoge</label>
-                        <input type="radio" name="mascota" id="hipodoge"/>
-                        <label for="capipepo">Capipepo</label>
-                        <input type="radio" name="mascota" id="capipepo">
-                        <label for="ratigueya">Ratigueya</label>
-                        <input type="radio" name="mascota" id="ratigueya">
+                        
+                        <div class="tarjetas">
+                            <label  class="targeta-de-mokepon"  for="hipodoge">
+                                <p>Hipodoge</p>
+                                <img src="/Programar/img/kapipepo.webp"  alt="Hipodoge">
+                            </label>
+                            <input   type="radio" name="mascota"    id="hipodoge"/>
+                            
+                            <label  class="targeta-de-mokepon"   for="capipepo">
+                                <p>Capipepo </p>
+                                <img src="/Programar/img/capipepo.webp" alt="Capipepo">
+                            </label>
+                            <input   type="radio" name="mascota"    id="capipepo">
+    
+                            <label  class="targeta-de-mokepon"   for="ratigueya">
+                               <p>Ratigueya</p> 
+                                <img src="/Programar/img/mokepon.webp" alt="Ratigueya">
+                            </label>
+                            <input   type="radio" name="mascota"    id="ratigueya">
+                        </div>
+                        <!--Temos diiferentes 
+                            <input type="text">
+                        <input type="password">
+                        <input type="checkbox">
+                        <input type="button">
+                        <input type="color">
+                        <input type="email">
+                        <input type="file">
+                        <input type="hidden">
+                        <input type="image">
+                        <input type="number">-->
             <!-- Hipodoge-> Agua
             Capipego->Tierra
             Ratigueya>Fuego
             Langostelvis->Agua y Fuego
             Tucapalma->Agua y la Tierra
             pydos-> Tienrra y Fuego -->
-                         <button id="boton-mascota">Seleccionar</button>
+            
+            <button id='boton-mascota'>Seleccionar</button>
         </section>
         <!--caja para seleccionar ataque-->
-        <section id="seleciona-ataque">
-                    <h2>Elige a tu ataque</h2>
-                    <p>Tu mascota <span id="mascota-jugador"></span> tiene <span>3</span> vidas</p>
-                    <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span>3</span> vidas</P>
-                    <p>
-                    <button id="boton-fuego">Fuego 🔥</button>
-                    <button id="boton-agua">Agua 💧</button>
-                    <button id="boton-tierra">Tierra 🌳</button>
-                    </p>
+        <section id='seleccionar-ataque'>
+            <h1 class="titulo">MOKEPON! 🔥💧🌳</h1>
+                    <h2 class="subtitulo">Elige a tu ataque</h2> 
+                    <div> 
+                        <button id="boton-fuego"  class="boton-de-ataque">Fuego 🔥</button>
+                        <button id="boton-agua"   class="boton-de-ataque">Agua 💧</button>
+                        <button id="boton-tierra" class="boton-de-ataque">Tierra 🌳</button>
+                    </div>
+
+                    <div>
+                        <section id='mensajes'>
+                            <!-- usamos el metodo Document.createElement  metodo para crear html manipulando el DOM
+                                <link rel="import" href="component.html"
+                
+                                <p>Tu mascota ataco con FUEGO la mascota del enemigo ataco con TIERRA - GANASTE 🎉</p>-->
+
+                                <!---Caja de mensajes-->
+                                <!--caja de reiniciar el juego-->
+                                <section id="reiniciar">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                                    <button id="boton-reiniciar">Reiniciar</button>
+                                </section>
+
+                        </section>
+                    </div>
+
+                    <div>
+                        <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+                        <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</P>
+                    </div>
+                    
         </section>
-            <!---Caja de mensajes-->
-            <section id="mensajes">
-                <p>Tu mascota ataco con FUEGO la mascota del enemigo ataco con TIERRA - GANASTE 🎉</p>
-            </section>
-            <!--caja de reiniciar el juego-->
-            <section id="reiniciar">
-                <button id="boton-reiniciar">Reiniciar</button>
-            </section>
-            <!-- <script src="./js/mokepon.js"></script> -->
+             <!--<script src="./js/mokepon.js"></script> -->
             <!--forma de arreglar los problemas en js es traer el code al final antes de que el body cierre-->
         </body>
         </html>
