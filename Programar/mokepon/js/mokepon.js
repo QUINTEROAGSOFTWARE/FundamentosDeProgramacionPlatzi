@@ -9,7 +9,7 @@ function iniciarJuego(){
     sectionSeleccionarAtaque.style.display='none'
 
     let setionReiniciar=document.getElementById('reiniciar')
-    setionReiniciar.style.display='flex'
+    setionReiniciar.style.display='none'
 
     let botonMascotaJugador=document.getElementById('boton-mascota')
     botonMascotaJugador.addEventListener('click' , seleccionarMascotaJugador)
@@ -80,7 +80,7 @@ function ataqueAleatorioEnemigo(){
     }else{
         ataqueEnemigo='TIERRA'
     }
-    combate()
+ combate()
 }
 function combate(){
     //COMBATE & contador de vidas
@@ -91,10 +91,10 @@ function combate(){
 
 
     if(ataqueEnemigo==ataqueJugador){
-        crearMensaje('Empate')
+    crearMensaje('Empate')
 
     }else if(ataqueJugador== 'FUEGO'&& ataqueEnemigo=='TIERRA'){
-        crearMensaje('Ganaste')
+    crearMensaje('Ganaste')
         vidasEnemigo--
         spanVidasEnemigo.innerHTML= vidasEnemigo
 
@@ -126,21 +126,30 @@ function combate(){
         
 
 function crearMensaje(resultado) {
-      let sectionMensajes=document.getElementById('mensajes')
+      let sectionMensajes=document.getElementById('resultado')
+      let ataquesDelJugador=document.getElementById('ataques-del-jugador')
+      let ataquesDelEnemigo=document.getElementById('ataques-del-enemigo')
 
-      let parrafo= document.createElement('p')
-      parrafo.innerHTML='Tu Mascota atacó con ' + ataqueJugador + ', la mascota del enemigo atacó con ' + ataqueEnemigo + '- '+resultado  
+      
+      let nuevoAtaqueDelJugador = document.createElement('p')
+      let nuevoAtaqueDelEnemigo = document.createElement('p')
 
-      sectionMensajes.appendChild(parrafo)
+      sectionMensajes.innerHTML=resultado
+      nuevoAtaqueDelJugador.innerHTML=ataqueJugador
+      nuevoAtaqueDelEnemigo.innerHTML=ataqueEnemigo
+
+      ataquesDelJugador.appendChild(nuevoAtaqueDelJugador)
+      ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo)
 }
 
 function crearMensajeFinal(resultadoFinal) {
-    let sectionMensajes=document.getElementById('mensajes')
+    let sectionMensajes=document.getElementById('resultado')
+    sectionMensajes.innerHTML=resultadoFinal
 
     let parrafo=document.createElement('p')
     parrafo.innerHTML=resultadoFinal 
 
-    sectionMensajes.appendChild(parrafo)
+    
     let botonFuego=document.getElementById('boton-fuego')
     botonFuego.disabled=true
 
@@ -150,7 +159,11 @@ function crearMensajeFinal(resultadoFinal) {
     let botonTierra= document.getElementById('boton-tierra')
     botonTierra.disabled=true
 
+    let setionReiniciar=document.getElementById('reiniciar')
+    setionReiniciar.style.display='flex'
 }
+
+
 function reiniciarJuego(){
     location.reload()
 }
