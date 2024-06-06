@@ -23,12 +23,12 @@ body{
     color: white;
     font-size: 20px;
 }
-.tarjetas, .tarjetas-ataques{
+.tarjetas, .mokepon-ataques{
     display: flex;
     gap: 10px;
 }
 
-.targeta-de-mokepon{
+.tarjeta-de-mokepon{
     width: 200px;
     height: 100px;
     background: #800050;
@@ -41,7 +41,7 @@ body{
     color: white;
 
 }
-.targeta-de-mokepon img{
+.tarjeta-de-mokepon img{
     width: 80px;
 }
 #boton-mascota{
